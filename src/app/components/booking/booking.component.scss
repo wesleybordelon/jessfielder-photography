@@ -1,0 +1,21 @@
+.content-container {
+    text-align: center;
+
+    p {
+        margin: 0 0 1em; // Adds space after each paragraph
+
+        &:last-child {
+            margin-bottom: 0; // Removes bottom margin from the last paragraph
+        }
+
+        a {
+            color: blue; // Example style for links
+            text-decoration: none; // Removes underline from links
+
+            &:hover {
+                text-decoration: underline; // Adds underline on hover for links
+            }
+        }
+
+    }
+}

@@ -1,0 +1,61 @@
+<div class="content-container">
+  <p>
+    Thank you for taking the time to visit and view a little bit of my work!
+    Contact me for any and all questions regarding booking a session.
+  </p>
+
+  <p class="email">
+    Email:
+    <a href="mailto:jessfielderphotography@gmail.com"
+      >jessfielderphotography&#64;gmail.com</a
+    >
+  </p>
+
+  <p>
+    Facebook:
+    <a href="http://www.facebook.com/JessFielderPhotography" target="_blank"
+      >JessFielderPhotography</a
+    >
+  </p>
+
+  <p>Instagram: <span>&#64;jessfielderphotography</span></p>
+
+  <p>Contact:</p>
+</div>
+<div style="display: flex;">
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill">
+      <mat-label>First Name</mat-label>
+      <input matInput formControlName="firstName" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Last Name</mat-label>
+      <input matInput formControlName="lastName" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" required type="email" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Phone Number</mat-label>
+      <input matInput formControlName="phoneNumber" required type="tel" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Comment</mat-label>
+      <textarea matInput formControlName="comment" required></textarea>
+    </mat-form-field>
+
+    <button
+      mat-raised-button
+      color="primary"
+      type="submit"
+      [disabled]="!contactForm.valid"
+    >
+      Submit
+    </button>
+  </form>
+</div>

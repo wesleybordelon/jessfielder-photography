@@ -1,0 +1,16 @@
+.about-container {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    width: 960px; 
+}
+
+.about-info {
+    text-align:center; 
+    display: block; 
+    justify-content: center; 
+    align-items: center; 
+    margin-left: auto; 
+    margin-right: auto;
+}
